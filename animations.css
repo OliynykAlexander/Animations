@@ -1,0 +1,150 @@
+body{
+    background-color: lightblue;
+}
+p{
+    font-size: 50px;
+    color: green;
+    text-align: center;
+}
+marquee{
+    font-size: 40px;
+    color: purple;
+}
+div{
+    margin: 0 auto;
+    width: 800px;
+    height: auto;
+    background-color: gold;
+    animation-iteration-count: infinite;
+}
+.marquee-container {
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.marquee-container p {
+    animation: scroll 10s linear infinite;
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.d1{
+    animation-name: example1;
+    animation-duration: 3s;
+}
+@keyframes example1{
+    from {background-color: yellow}
+    to {background-color: aqua}
+}
+.d2{
+    animation-name: example2;
+    animation-duration: 3s;
+}
+@keyframes example2{
+    0% {background-color: yellow}
+    25% {background-color: aqua}
+    50% {background-color: palevioletred}
+    75% {background-color: aqua}
+    100% {background-color: green}
+}
+.d3{
+    animation-name: example3;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    position: relative;
+}
+@keyframes example3{
+    0% {background-color: yellow; left: 0px; top: 0px;}
+    25% {background-color: aqua; left: 100px; top: 0px;}
+    50% {background-color: palevioletred; left: 0px; top: 100px;}
+    75% {background-color: aqua; left: 0px; top: 50px;}
+    100% {background-color: green; left: 50px; top: 20px;}
+}
+.d4{
+    animation-name: example4;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    position: relative;
+    animation-direction: reverse;
+}
+@keyframes example4{
+    0% {background-color: yellow; left: 0px; top: 0px;}
+    25% {background-color: aqua; left: 100px; top: 0px;}
+    50% {background-color: palevioletred; left: 0px; top: 100px;}
+    75% {background-color: aqua; left: 0px; top: 50px;}
+    100% {background-color: green; left: 50px; top: 20px;}
+}
+.d5{
+    animation-name: example5;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    position: relative;
+    animation-direction: alternate;
+}
+@keyframes example5{
+    0% {background-color: yellow; left: 0px; top: 0px;}
+    25% {background-color: aqua; left: 100px; top: 0px;}
+    50% {background-color: palevioletred; left: 0px; top: 100px;}
+    75% {background-color: aqua; left: 0px; top: 50px;}
+    100% {background-color: green; left: 50px; top: 20px;}
+}
+.d6{
+    animation-name: example6;
+    animation-duration: 5s;
+    position: relative;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+@keyframes example6{
+    0% {background-color: yellow; left: 0px; top: 0px;}
+    100% {background-color: green; left: 400px; top: 0px;}
+}
+.d7{
+    animation-name: example7;
+    animation-duration: 5s;
+    position: relative;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+}
+@keyframes example7{
+    0% {background-color: yellow; left: 0px; top: 0px;}
+    100% {background-color: green; left: 400px; top: 0px;}
+}
+.d8{
+    animation-name: example7;
+    animation-duration: 5s;
+    position: relative;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+@keyframes example8{
+    0% {background-color: yellow; left: 0px; top: 0px;}
+    100% {background-color: green; left: 400px; top: 0px;}
+}
+.d9{
+    animation-name: example9;
+    animation-duration: 5s;
+    position: relative;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+}
+@keyframes example9{
+    0% {background-color: yellow; left: 0px; top: 0px;}
+    100% {background-color: green; left: 400px; top: 0px;}
+}
+.d10{
+    animation-name: example10;
+    animation-duration: 5s;
+    position: relative;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+@keyframes example10{
+    0% {background-color: yellow; left: 0px; top: 0px;}
+    100% {background-color: green; left: 400px; top: 0px;}
+}
